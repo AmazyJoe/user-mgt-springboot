@@ -1,7 +1,7 @@
-package com.example.usermanagement.Controller;
+package com.example.usermanagement.controller;
 
-import com.example.usermanagement.Model.User;
-import com.example.usermanagement.Service.UserService;
+import com.example.usermanagement.model.User;
+import com.example.usermanagement.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,6 +22,4 @@ public class UserController {
     public List<User> getAllUsers() {
         return userService.findAllUsers();
     }
-
-
 }

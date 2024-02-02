@@ -1,7 +1,7 @@
-package com.example.usermanagement.Service;
+package com.example.usermanagement.service;
 
-import com.example.usermanagement.Model.User;
-import com.example.usermanagement.Repository.UserRepository;
+import com.example.usermanagement.model.User;
+import com.example.usermanagement.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +20,4 @@ public class UserService {
     public List<User> findAllUsers() {
         return userRepository.findAll();
     }
-
-    // Add more services here as needed
 }

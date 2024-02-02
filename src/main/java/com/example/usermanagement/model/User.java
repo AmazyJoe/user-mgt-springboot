@@ -1,8 +1,7 @@
-package com.example.usermanagement.Model;
+package com.example.usermanagement.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.io.Serializable;
 
 @Entity
@@ -11,7 +10,7 @@ import java.io.Serializable;
 public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long Id;
+    private long id;
 
     @Column(nullable = false, unique = true)
     private String email;
